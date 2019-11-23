@@ -1,13 +1,22 @@
-package com.downcasting;
+package com.assignment;
 
 class A {
 	int i;
-	A()
+	void initializing(int i)
 	{
-		
+		System.out.println(i);
+		i=20;
+		System.out.println(this.i);
 	}
-A(int i)
-{
-	this.i=i;
-}
+
+	public static void main(String[] args) {
+		A obj= new A();
+		System.out.println(obj.i);
+		obj.initializing(obj.i);
+		
+		
+		
+	
+	}
+
 }
