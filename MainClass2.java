@@ -1,28 +1,17 @@
-package com.downcasting;
+package com.methodoveriding;
 
-class MainClass2 {
+ class MainClass2 {
 
 	public static void main(String[] args) {
-		A3 ob1=new A3(10);
-		A3 ob2=new B3(10,20);
-		A3 ob3=new C3(500,1000);
-		display(ob1);
-		display(ob2);
-		display(ob3);
+		A1 ob=new A1();
+		ob.display();
+		B1 ob1=new B1();
+		ob1.display();
+		C1 ob2=new C1();
+		ob2.display();
+		
 		
 
-	}
-	public static void display(A3 obj)
-	{
-		System.out.println(obj.i);
-		if(obj instanceof B3)
-		{
-			System.out.println(((B3)obj).j);
-		}
-		if(obj instanceof C3)
-		{
-			System.out.println(((C3)obj).k);
-		}
 	}
 
 }

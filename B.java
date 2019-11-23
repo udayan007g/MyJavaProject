@@ -1,14 +1,9 @@
-package com.downcasting;
+package com.methodoveriding;
 
-class B extends A {
-	int k;
-	B()
-	{
-		
-	}
-B(int i,int k)
-{
-	super(i);
-	this.k=k;
-}
+ class B extends A{
+	 void test()
+	 {
+		 System.out.println("from B test()");
+	 }
+
 }
