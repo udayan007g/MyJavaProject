@@ -1,13 +1,8 @@
-package com.downcasting;
+package com.pack1;
 
-class A2 {
-	int i;
-	A2()
-	{
-		
-	}
-A2(int i)
-{
-	this.i=i;
-}
+public  class A2 {
+	 static int i;
+	 int j;
+	 
+
 }

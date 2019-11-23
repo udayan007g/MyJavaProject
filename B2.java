@@ -1,14 +1,10 @@
-package com.downcasting;
+package com.pack1;
 
-class B2 extends A2 {
-	int j;
-	B2()
-	{
-		
+class B2 {
+	public static void main(String[] args) {
+		System.out.println(A2.i);
+		A2 ob=new A2();
+		System.out.println(ob.j);
 	}
-B2(int i,int j)
-{
-	super(i);
-	this.j=j;
-}
+
 }

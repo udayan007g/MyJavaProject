@@ -1,12 +1,11 @@
-package com.methodoveriding;
+package com.pack1;
 
- class C1 extends B1 {
-	 int k=30;
-	 void display()
-	 {
-		 System.out.println(i);
-		 System.out.println(j);
-		 System.out.println(k);
-	 }
+ class C1 extends A1{
+	 public static void main(String[] args) {
+		System.out.println(C1.i);
+		C1 ob=new C1();
+		System.out.println(ob.j);
+	}
+	 
 
 }
