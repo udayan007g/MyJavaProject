@@ -1,9 +1,6 @@
-package com.methodoveriding;
+package com.nonstaticmembers;
 
- class B extends A{
-	 void test()
-	 {
-		 System.out.println("from B test()");
-	 }
+class B {
+	int d=10;
 
 }

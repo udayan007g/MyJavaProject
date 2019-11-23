@@ -1,17 +1,6 @@
-package com.miscellaneous;
+package com.nonstaticmembers;
 
 class A {
-	int i;
-	double j;
-	A()
-	{
-	}
-	
-	A(int i,double j)
-	{
-		this.i=i;
-		this.j=j;
-	}
-	
+	double d=1.0;
 
 }

@@ -1,16 +1,16 @@
-package com.methodoveriding;
+package com.nonstaticmembers;
 
- class MainClass2 {
+class MainClass2 {
 
 	public static void main(String[] args) {
-		A1 ob=new A1();
-		ob.display();
-		B1 ob1=new B1();
-		ob1.display();
-		C1 ob2=new C1();
-		ob2.display();
-		
-		
+		 A ob1=new A();
+		 B ob2=new B();
+		 System.out.println(ob1.d);
+		 System.out.println(ob2.d);
+		 ob1.d=12;
+		 ob2.d=12;
+		 System.out.println(ob2.d);
+		 System.out.println(ob1.d);
 
 	}
 
