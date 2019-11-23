@@ -1,14 +1,23 @@
-package com.methodoveriding;
+package com.miscellaneous;
 
- class MainClass {
+class MainClass {
+	static void display(A ob)
+	{
+		System.out.println(ob.i);
+		System.out.println(ob.j);
+	}
 
 	public static void main(String[] args) {
-		Rectangle r=new Rectangle();
-		r.area();
-		Circle c=new Circle();
-		c.area();
-		Shape s=new Shape();
-		s.area();
+		A ob1=new A(10,10.2);
+		A ob2=new A (1000,10.23);
+	display(ob1);
+	display(ob2);
+	
+	
+				
+				
+				
+				
 		
 
 	}
