@@ -1,13 +1,20 @@
-package com.methodoveriding;
+package com.polymorphism;
 
-public class MainClass1 {
+class MainClass1 {
 
 	public static void main(String[] args) {
-	
-B ob=new B();
-ob.test();
-A ob1=new A();
-ob1.test();
+		Bank bank;
+		bank=new SBI();
+		System.out.println(bank.rateOfInterest());
+		bank=new SBIInTouch();
+		System.out.println(bank.rateOfInterest());
+		bank=new CanaraBank();
+		System.out.println(bank.rateOfInterest());
+		bank=new Icici();
+		System.out.println(bank.rateOfInterest());b
+		
+		
+
 	}
 
 }

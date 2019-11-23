@@ -1,6 +1,9 @@
-package com.nonstaticmembers;
-
-class B {
-	int d=10;
+package com.polymorphism;
+ class B extends A {
+	 @Override
+	 void test()
+	 {
+		System.out.println("from test() of B"); 
+	 }
 
 }

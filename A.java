@@ -1,6 +1,9 @@
-package com.nonstaticmembers;
+package com.polymorphism;
 
 class A {
-	double d=1.0;
+	void test()
+	{
+		System.out.println("from test() of A");
+	}
 
 }
